@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css" type="text/css" />
+  </head>
+  <body>
+    <nav>Consulta preços de ações BOVESPA</nav>
+    <main>
+      <div class="header">
+        <form action="/exibe" method="POST" enctype="multipart/form-data">
+          <button type="submit" onclick="">SUBMIT</button>
+        </form>
+      </div>
+      <div class="table">
+        <table>
+          <thead>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+            <th>Financial Volume</th>
+            <th>Bid</th>
+            <th>Ask</th>
+            <th>Variation</th>
+            <th>IV Rank</th>
+            <th>Vol</th>
+            <th>Sta dv 1y</th>
+            <th>Sta dv 5d</th>
+            <th>Date</th>
+          </thead>
+
+          <tbody>
+            <% getData.forEach((obj) => { %>
+            <tr>
+              <% for (let dados in obj) { %>
+
+              <td><%= obj[dados] %></td>
+
+              <% } %>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
