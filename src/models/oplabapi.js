@@ -27,15 +27,15 @@ async function getMktData(stocks) {
                     high: data.high,
                     low: data.low,
                     close: data.close,
-                    volume: data.volume,
+                    volume: data.volume.toFixed(2),
                     financial_volume: data.financial_volume,
                     bid: data.bid,
                     ask: data.ask,
-                    variation: data.variation,
-                    iv_1y_rank: data.iv_1y_rank,
-                    iv_current: data.iv_current,
-                    stdv_1y: data.stdv_1y,
-                    stdv_5d: data.stdv_5d,
+                    variation: data.variation.toFixed(2),
+                    iv_1y_rank: data.iv_1y_rank.toFixed(2),
+                    iv_current: data.iv_current.toFixed(2),
+                    stdv_1y: (data.stdv_1y * 100).toFixed(2),
+                    stdv_5d: (data.stdv_5d * 100).toFixed(2),
                     date: `${d}/${m}/${y}`
                 }
                 stocksData.push(resData)

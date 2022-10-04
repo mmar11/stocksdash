@@ -18,6 +18,7 @@ table,
 td,
 th {
   border: double #222222 2px;
+  padding: 3px;
 }
 
 nav {
