@@ -1,4 +1,3 @@
-// mysql://bb098f41f10e8b:e566db1b@us-cdbr-east-06.cleardb.net/heroku_243d029b4818fd9?reconnect=true
 
 
 import mysql from 'mysql2';
