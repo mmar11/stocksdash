@@ -19,4 +19,5 @@ routes.post('/exibe', upload.none(), controllers.indexControlexibe)
 
 
 
+
 export default routes

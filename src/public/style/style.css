@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
@@ -5,40 +7,45 @@
 }
 
 html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 
 body {
-  background-color: rgb(245, 249, 255);
-  color: #222222;
+  background-color: rgb(211, 241, 255);
 }
 
 table,
 td,
 th {
-  border: double #222222 2px;
+  border: double darkblue 2px;
   padding: 3px;
+  color: darkblue;
 }
 
-nav {
+nav,
+label {
   margin: 20px;
   font-weight: 700;
   text-align: center;
+  color: darkblue;
 }
 
 .header,
 .table,
-form,
-table {
-  align-content: center;
-  justify-content: center;
+form {
   text-align: center;
-  margin: 10px;
-  align-self: center;
+  margin: 5px;
+}
+
+table {
+  margin: 20px auto;
 }
 
 button {
   margin: 20px;
   padding: 5px;
+  background-color: darkblue;
+  color: aliceblue;
+  cursor: pointer;
 }

@@ -9,6 +9,12 @@ const upload = multer({ dest: 'uploads/' })
 import * as dotenv from 'dotenv'
 dotenv.config()
 
+import { count, getMketCloseDay } from './src/models/service.js'
+
+
+setInterval(getMketCloseDay, 900000)
+
+
 const app = express()
 
 const PORT = 3000

@@ -7,7 +7,7 @@ let indexControlexibe = async (req, res) => {
     let stocksList = []
 
     stocksList.push(req.body.stock)
-    console.log(stocksList)
+
 
     let getData = await getMktData(stocksList)
 
