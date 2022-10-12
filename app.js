@@ -12,7 +12,7 @@ dotenv.config()
 import { count, getMketCloseDay } from './src/models/service.js'
 
 
-setInterval(getMketCloseDay, 900000)
+// setInterval(getMketCloseDay, 900000)
 
 
 const app = express()
